@@ -19,6 +19,11 @@ class _JournalAddEntryScreenState extends State<JournalAddEntryScreen> {
   bool _isLoading = false;
 
   @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
   void dispose() {
     _2fc7260d3f554efaB31c999ea41c2316Controller.dispose();
     _ab0dc6e88c154b1e85cb09a3d2335a66Controller.dispose();
@@ -29,6 +34,6 @@ class _JournalAddEntryScreenState extends State<JournalAddEntryScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: const Text('Add Entry'), backgroundColor: const Color(0xFFFFFFFF), foregroundColor: const Color(0xFF1E3A8A)), body: Padding(padding: const EdgeInsets.all(16), child: Column(children: [TextField(controller: _2fc7260d3f554efaB31c999ea41c2316Controller, decoration: InputDecoration(labelText: 'Description')), const SizedBox(height: 16, child: const SizedBox.shrink()), TextField(controller: _ab0dc6e88c154b1e85cb09a3d2335a66Controller, decoration: InputDecoration(labelText: 'Amount')), const SizedBox(height: 24, child: const SizedBox.shrink()), const Text('Type', style: const TextStyle(color: const Color(0xFF1E3A8A))), Row(children: [Radio(value: 'Income', groupValue: 'Income'), const Text('Income', style: const TextStyle(color: const Color(0xFF1E3A8A))), Radio(value: 'Expense', groupValue: 'Income'), const Text('Expense', style: const TextStyle(color: const Color(0xFF1E3A8A)))]), const SizedBox(height: 24, child: const SizedBox.shrink()), SizedBox(height: 50, child: ElevatedButton(onPressed: () {}, child: Text('Save Entry'), style: ElevatedButton.styleFrom(backgroundColor: const Color(0xFF1E3A8A))))])), backgroundColor: const Color(0xFFFFFFFF));
+    return Scaffold(appBar: AppBar(title: const Text('Add Entry'), backgroundColor: const Color(0xFFFFFFFF), foregroundColor: const Color(0xFF1E3A8A)), body: Padding(padding: const EdgeInsets.all(16), child: Column(children: [TextField(controller: _2fc7260d3f554efaB31c999ea41c2316Controller, decoration: InputDecoration(labelText: 'Description')), const SizedBox(height: 16, child: const SizedBox.shrink()), TextField(controller: _ab0dc6e88c154b1e85cb09a3d2335a66Controller, decoration: InputDecoration(labelText: 'Amount')), const SizedBox(height: 24, child: const SizedBox.shrink()), const Text('Type', style: const TextStyle(color: const Color(0xFF1E3A8A))), Row(children: [Radio(value: 'Income', groupValue: 'Income'), const Text('Income', style: const TextStyle(color: const Color(0xFF1E3A8A))), Radio(value: 'Expense', groupValue: 'Income'), const Text('Expense', style: const TextStyle(color: const Color(0xFF1E3A8A)))]), const SizedBox(height: 24, child: const SizedBox.shrink()), SizedBox(height: 50, child: ElevatedButton(onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const JournalHomeScreen())), child: Text('Save Entry'), style: ElevatedButton.styleFrom(backgroundColor: const Color(0xFF1E3A8A), foregroundColor: const Color(0xFFFFFFF0))))])), backgroundColor: const Color(0xFFFFFFFF));
   }
 }

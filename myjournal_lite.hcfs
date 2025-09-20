@@ -48,7 +48,7 @@
                     "id": "79ef1967-0ce3-44fb-bec7-1d8b97c14924",
                     "type": "Text",
                     "properties": {
-                      "data": "MyJournal",
+                      "data": "myJournal",
                       "fontSize": 32,
                       "fontWeight": "bold",
                       "color": "#FFFFFF",
@@ -68,13 +68,48 @@
                       "letterSpacing": 2
                     },
                     "children": []
+                  },
+                  {
+                    "id": "deeda38a-9843-4f0d-8ee1-f9b16cb1031d",
+                    "type": "SizedBox",
+                    "properties": {
+                      "width": 50,
+                      "height": 100
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "ae57fd44-30be-4813-ab9a-8ab1d0fc2a68",
+                    "type": "Text",
+                    "properties": {
+                      "data": "Powered By HyverStudio",
+                      "fontSize": 12,
+                      "color": "#FFFFFF",
+                      "textAlign": "center",
+                      "fontStyle": "italic"
+                    },
+                    "children": []
                   }
                 ]
+              },
+              {
+                "id": "bd7a0937-0d3f-45f2-94ce-2758fea43802",
+                "type": "SupabaseStreamBuilder",
+                "properties": {},
+                "children": []
               }
             ]
           }
         ]
-      }
+      },
+      "behaviors": [
+        {
+          "id": "ef3f6239-7f38-48fb-9a3c-33d782f20490",
+          "type": "autoNavigateOnLoad",
+          "delay": 3000,
+          "targetScreenId": "dc5d7e3a-e0f5-40e2-b676-40e5bfa28012"
+        }
+      ]
     },
     {
       "id": "dc5d7e3a-e0f5-40e2-b676-40e5bfa28012",
@@ -95,16 +130,6 @@
             },
             "children": [
               {
-                "id": "e61bd608-6a41-474a-9a09-b2def71669fe",
-                "type": "Text",
-                "properties": {
-                  "data": "Welcome Back",
-                  "fontSize": 28,
-                  "fontWeight": "bold"
-                },
-                "children": []
-              },
-              {
                 "id": "55a69cf6-772a-43be-b14d-54cf803006dd",
                 "type": "Center",
                 "properties": {},
@@ -117,6 +142,14 @@
                       "crossAxisAlignment": "start"
                     },
                     "children": [
+                      {
+                        "id": "d48942a9-1d7c-4542-9041-8be327477b34",
+                        "type": "SizedBox",
+                        "properties": {
+                          "height": 10
+                        },
+                        "children": []
+                      },
                       {
                         "id": "e02631d5-7813-44d4-b630-a7aa5be96fa9",
                         "type": "Text",
@@ -140,7 +173,12 @@
                         "id": "d503961c-586c-4b43-872c-b06a22d98891",
                         "type": "TextField",
                         "properties": {
-                          "label": "Email"
+                          "label": "Email",
+                          "textColor": "#000000",
+                          "fillColor": "#000000",
+                          "filled": false,
+                          "borderColor": "#000000",
+                          "focusedBorderColor": "#000000"
                         },
                         "children": []
                       },
@@ -158,7 +196,11 @@
                         "properties": {
                           "label": "Password",
                           "obscureText": true,
-                          "hintText": "*******"
+                          "hintText": "*******",
+                          "textColor": "#000000",
+                          "fillColor": "#000000",
+                          "borderColor": "#000000",
+                          "focusedBorderColor": "#"
                         },
                         "children": []
                       },
@@ -364,7 +406,9 @@
             "properties": {
               "icon": "add",
               "onPressed": "NAVIGATE_TO:Journal Add Entry",
-              "tooltip": "New"
+              "tooltip": "Add",
+              "backgroundColor": "#1E3A8A",
+              "foregroundColor": "#FFFFFF"
             },
             "children": []
           }
@@ -503,7 +547,8 @@
                       "text": "Save Entry",
                       "height": 50,
                       "backgroundColor": "#1E3A8A",
-                      "onPressed": "674ee288-384e-47d6-970e-071de4797338"
+                      "onPressed": "674ee288-384e-47d6-970e-071de4797338",
+                      "foregroundColor": "#FFFFF0"
                     },
                     "children": []
                   }
@@ -559,13 +604,17 @@
   "firebaseConnectors": [],
   "supabaseConnectors": [
     {
-      "name": "MyJournallite",
+      "name": "HyverStudio",
       "url": "https://ognrfduwupjnzsucthyv.supabase.co",
       "anonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9nbnJmZHV3dXBqbnpzdWN0aHl2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgyOTA5MjYsImV4cCI6MjA3Mzg2NjkyNn0.H-DLcX0wNPDLMZrrlRb9_YwZC0vsuoFj9U0vRJqM_ug",
-      "id": "f0750aab-1529-41be-986d-b43f8474c3bf"
+      "id": "ebb6f180-5308-4a81-9457-18394051f7ca"
     }
   ],
-  "github": null,
+  "github": {
+    "owner": "hyvercode",
+    "repo": "my_journal_lite",
+    "lastSyncSnapshot": "{\"id\":\"5bff956a-0fdf-4d0d-9cf5-75a30764ece7\",\"name\":\"MyJournal lite\",\"screens\":[{\"id\":\"b82f3c64-eb88-41f2-ae2c-3427acb378cd\",\"name\":\"Journal Splash\",\"path\":\"/journal-splash\",\"widgetTree\":{\"id\":\"cd7de2f4-42ed-4486-bfa5-68128e39737a\",\"type\":\"Scaffold\",\"properties\":{\"backgroundColor\":\"#1E3A8A\"},\"children\":[{\"id\":\"0760f91f-f8ff-4beb-805d-98c134c3644a\",\"type\":\"Center\",\"properties\":{},\"children\":[{\"id\":\"8960d037-fa65-4528-83a6-708c77f8a526\",\"type\":\"Column\",\"properties\":{\"mainAxisAlignment\":\"center\",\"crossAxisAlignment\":\"center\"},\"children\":[{\"id\":\"941dd683-a07d-453b-a25e-6a7c830fb88f\",\"type\":\"Icon\",\"properties\":{\"icon\":\"book\",\"size\":80,\"color\":\"#FFFFFF\"},\"children\":[]},{\"id\":\"8a930c8d-8c34-4e85-b8da-e7fb36e96a55\",\"type\":\"SizedBox\",\"properties\":{\"height\":16},\"children\":[]},{\"id\":\"79ef1967-0ce3-44fb-bec7-1d8b97c14924\",\"type\":\"Text\",\"properties\":{\"data\":\"MyJournal\",\"fontSize\":32,\"fontWeight\":\"bold\",\"color\":\"#FFFFFF\",\"letterSpacing\":5},\"children\":[]},{\"id\":\"faecb14d-cd45-4fb5-acb3-6481818367f7\",\"type\":\"Text\",\"properties\":{\"data\":\" lite\",\"fontSize\":16,\"textAlign\":\"center\",\"fontStyle\":\"italic\",\"lineHeight\":1,\"letterSpacing\":2},\"children\":[]},{\"id\":\"deeda38a-9843-4f0d-8ee1-f9b16cb1031d\",\"type\":\"SizedBox\",\"properties\":{\"width\":50,\"height\":100},\"children\":[]},{\"id\":\"ae57fd44-30be-4813-ab9a-8ab1d0fc2a68\",\"type\":\"Text\",\"properties\":{\"data\":\"Powered By HyverStudio\",\"fontSize\":12,\"color\":\"#FFFFFF\",\"textAlign\":\"center\",\"fontStyle\":\"italic\"},\"children\":[]}]},{\"id\":\"bd7a0937-0d3f-45f2-94ce-2758fea43802\",\"type\":\"SupabaseStreamBuilder\",\"properties\":{},\"children\":[]}]}]},\"behaviors\":[{\"id\":\"ef3f6239-7f38-48fb-9a3c-33d782f20490\",\"type\":\"autoNavigateOnLoad\",\"delay\":3000,\"targetScreenId\":\"dc5d7e3a-e0f5-40e2-b676-40e5bfa28012\"}]},{\"id\":\"dc5d7e3a-e0f5-40e2-b676-40e5bfa28012\",\"name\":\"Journal Login\",\"path\":\"/journal-login\",\"widgetTree\":{\"id\":\"5a3c1341-1f19-40a6-9f49-8e81131c2154\",\"type\":\"Scaffold\",\"properties\":{\"backgroundColor\":\"#FFFFFF\"},\"children\":[{\"id\":\"5ed78719-83b9-4247-9a3f-7804df810bd8\",\"type\":\"Padding\",\"properties\":{\"padding\":24},\"children\":[{\"id\":\"55a69cf6-772a-43be-b14d-54cf803006dd\",\"type\":\"Center\",\"properties\":{},\"children\":[{\"id\":\"6181b7b3-380f-40bc-8bff-cc5e4ce9304c\",\"type\":\"Column\",\"properties\":{\"mainAxisAlignment\":\"center\",\"crossAxisAlignment\":\"start\"},\"children\":[{\"id\":\"d48942a9-1d7c-4542-9041-8be327477b34\",\"type\":\"SizedBox\",\"properties\":{\"height\":10},\"children\":[]},{\"id\":\"e02631d5-7813-44d4-b630-a7aa5be96fa9\",\"type\":\"Text\",\"properties\":{\"data\":\"Welcome Back\",\"fontSize\":28,\"fontWeight\":\"bold\",\"color\":\"#1E3A8A\"},\"children\":[]},{\"id\":\"6afbb892-ec0e-4fc3-9dc4-c24bd9f00b72\",\"type\":\"SizedBox\",\"properties\":{\"height\":24},\"children\":[]},{\"id\":\"d503961c-586c-4b43-872c-b06a22d98891\",\"type\":\"TextField\",\"properties\":{\"label\":\"Email\",\"textColor\":\"#000000\",\"fillColor\":\"#000000\",\"filled\":false,\"borderColor\":\"#000000\",\"focusedBorderColor\":\"#000000\"},\"children\":[]},{\"id\":\"e1dd53fd-73e1-4243-bc7b-facf15e20e57\",\"type\":\"SizedBox\",\"properties\":{\"height\":16},\"children\":[]},{\"id\":\"e6b13597-46bf-42de-9489-70711c7ce1cc\",\"type\":\"TextField\",\"properties\":{\"label\":\"Password\",\"obscureText\":true,\"hintText\":\"*******\",\"textColor\":\"#000000\",\"fillColor\":\"#000000\",\"borderColor\":\"#000000\",\"focusedBorderColor\":\"#\"},\"children\":[]},{\"id\":\"03a182ab-deb0-4fbf-b244-df2d2c35ce7d\",\"type\":\"SizedBox\",\"properties\":{\"height\":24},\"children\":[]},{\"id\":\"1f8e9e18-f254-4ba4-b296-5d2f6548e068\",\"type\":\"Button\",\"properties\":{\"text\":\"Login\",\"height\":50,\"backgroundColor\":\"#1E3A8A\",\"onPressed\":\"674ee288-384e-47d6-970e-071de4797338\",\"foregroundColor\":\"#FFFFF0\"},\"children\":[]}]}]}]}]}},{\"id\":\"674ee288-384e-47d6-970e-071de4797338\",\"name\":\"Journal Home\",\"path\":\"/journal-home\",\"widgetTree\":{\"id\":\"30a68556-bb01-4e6d-a7c4-2f558b09186c\",\"type\":\"Scaffold\",\"properties\":{\"backgroundColor\":\"#F3F4F6\"},\"children\":[{\"id\":\"a55f29cb-da5e-4acd-b58b-7612fe1d7c92\",\"type\":\"AppBar\",\"properties\":{\"title\":\"Dashboard\",\"backgroundColor\":\"#FFFFFF\",\"foregroundColor\":\"#1E3A8A\"},\"children\":[]},{\"id\":\"7301db33-6389-4d1d-8afe-3a879d800c1b\",\"type\":\"Column\",\"properties\":{},\"children\":[{\"id\":\"dc512be7-90da-410c-a991-f377edff0cc7\",\"type\":\"Card\",\"properties\":{\"margin\":16,\"padding\":16,\"color\":\"#FFFFFF\",\"shadowColor\":\"#1E3A8A\",\"borderRadius\":10},\"children\":[{\"id\":\"d9d66704-6ff2-4bbc-b5f1-93b6ba32e997\",\"type\":\"Row\",\"properties\":{\"mainAxisAlignment\":\"spaceAround\"},\"children\":[{\"id\":\"2f26020b-5757-4636-aa73-0ed1bf453679\",\"type\":\"Column\",\"properties\":{\"crossAxisAlignment\":\"center\"},\"children\":[{\"id\":\"4050fc12-851c-481f-883d-3175508748f4\",\"type\":\"Text\",\"properties\":{\"data\":\"Income\",\"color\":\"#6B7280\"},\"children\":[]},{\"id\":\"cb040dec-7b06-4917-a5ee-a552e6586845\",\"type\":\"Text\",\"properties\":{\"data\":\"$1,200.00\",\"fontSize\":20,\"fontWeight\":\"bold\",\"color\":\"#10B981\"},\"children\":[]}]},{\"id\":\"5d316338-2a66-4bd4-9e4b-4b2caf5b5fb3\",\"type\":\"Column\",\"properties\":{\"crossAxisAlignment\":\"center\"},\"children\":[{\"id\":\"ce34ecfe-55de-4409-a252-f64989a3f469\",\"type\":\"Text\",\"properties\":{\"data\":\"Expense\",\"color\":\"#6B7280\"},\"children\":[]},{\"id\":\"7ce51092-6a08-403b-8d92-e8f52962e3ff\",\"type\":\"Text\",\"properties\":{\"data\":\"$450.50\",\"fontSize\":20,\"fontWeight\":\"bold\",\"color\":\"#EF4444\"},\"children\":[]}]}]}]},{\"id\":\"4a6a4959-b75d-4d92-adce-39458958e79d\",\"type\":\"Padding\",\"properties\":{\"padding\":16},\"children\":[{\"id\":\"5ff4d538-89f2-4870-bddf-293a24190247\",\"type\":\"Text\",\"properties\":{\"data\":\"Recent Transactions\",\"fontWeight\":\"bold\",\"color\":\"#1E3A8A\",\"fontSize\":24},\"children\":[]}]},{\"id\":\"dfda2d0c-7aa8-4ff8-bcf1-400eb09dd06c\",\"type\":\"Expanded\",\"properties\":{},\"children\":[{\"id\":\"d1dbc224-f682-4004-b397-78fc2a1e1eb8\",\"type\":\"FirebaseStreamBuilder\",\"properties\":{\"connectorId\":\"journal-app-firebase-connector\",\"databasePath\":\"/journals\",\"responseModelId\":\"journal-app-entry-model\"},\"children\":[{\"id\":\"1b31cc4e-64a7-4e29-be27-1f47d129921e\",\"type\":\"ListTile\",\"properties\":{\"title\":\"{{item.description}}\",\"subtitle\":\"{{item.date}}\",\"tileColor\":\"#FFFFFF\",\"textColor\":\"#6B7280\",\"iconColor\":\"#1E3A8A\"},\"children\":[{\"id\":\"b74e3361-ee08-4210-b47f-2e0b3fede691\",\"type\":\"Text\",\"properties\":{\"data\":\"{{item.amount}}\"},\"children\":[]}]}]}]}]},{\"id\":\"07ab64e1-2264-4f3b-aeea-ecda9c364a0a\",\"type\":\"FloatingActionButton\",\"properties\":{\"icon\":\"add\",\"onPressed\":\"NAVIGATE_TO:Journal Add Entry\",\"tooltip\":\"Add\",\"backgroundColor\":\"#1E3A8A\",\"foregroundColor\":\"#FFFFFF\"},\"children\":[]}]}},{\"id\":\"17dcfd51-3f24-47c5-a825-469cae496a8a\",\"name\":\"Journal Add Entry\",\"path\":\"/journal-add-entry\",\"widgetTree\":{\"id\":\"c3210a41-32e0-4d75-ae4e-4a14b26ace5b\",\"type\":\"Scaffold\",\"properties\":{\"backgroundColor\":\"#FFFFFF\"},\"children\":[{\"id\":\"0d19afe0-d604-46dd-93fb-255bafc016e4\",\"type\":\"AppBar\",\"properties\":{\"title\":\"Add Entry\",\"backgroundColor\":\"#FFFFFF\",\"foregroundColor\":\"#1E3A8A\"},\"children\":[]},{\"id\":\"11a1a0c0-a43b-4216-ba4e-2042782b5157\",\"type\":\"Padding\",\"properties\":{\"padding\":16},\"children\":[{\"id\":\"379106b8-1cf1-47f7-98cd-64184d3778b1\",\"type\":\"Column\",\"properties\":{},\"children\":[{\"id\":\"2fc7260d-3f55-4efa-b31c-999ea41c2316\",\"type\":\"TextField\",\"properties\":{\"label\":\"Description\"},\"children\":[]},{\"id\":\"e18f009a-0079-44c9-b0ee-6ba27f081188\",\"type\":\"SizedBox\",\"properties\":{\"height\":16},\"children\":[]},{\"id\":\"ab0dc6e8-8c15-4b1e-85cb-09a3d2335a66\",\"type\":\"TextField\",\"properties\":{\"label\":\"Amount\"},\"children\":[]},{\"id\":\"e4b827f6-77bc-4b96-a6c7-a44ec66bf160\",\"type\":\"SizedBox\",\"properties\":{\"height\":24},\"children\":[]},{\"id\":\"b0b36db3-68ba-4166-93a2-3dd2012d369d\",\"type\":\"Text\",\"properties\":{\"data\":\"Type\",\"color\":\"#1E3A8A\"},\"children\":[]},{\"id\":\"ec31cc87-9a31-424e-9182-ce4b8dbb58b6\",\"type\":\"Row\",\"properties\":{},\"children\":[{\"id\":\"f7b9aeba-3c5e-408d-916a-be53b2897e8b\",\"type\":\"Radio\",\"properties\":{\"value\":\"Income\",\"groupValue\":\"Income\"},\"children\":[]},{\"id\":\"52b00a76-54c7-4b01-b16d-bbed789b643c\",\"type\":\"Text\",\"properties\":{\"data\":\"Income\",\"color\":\"#1E3A8A\"},\"children\":[]},{\"id\":\"4a66e68e-2600-4bcf-9aac-29ae1bfeb667\",\"type\":\"Radio\",\"properties\":{\"value\":\"Expense\",\"groupValue\":\"Income\"},\"children\":[]},{\"id\":\"ca01491f-2a2d-4422-9b2b-5fca6c6bc23d\",\"type\":\"Text\",\"properties\":{\"data\":\"Expense\",\"color\":\"#1E3A8A\"},\"children\":[]}]},{\"id\":\"2e7d621f-dc40-43bc-ac04-6a0e8ab2bd09\",\"type\":\"SizedBox\",\"properties\":{\"height\":24},\"children\":[]},{\"id\":\"3643a8cd-35e7-4c1d-acfe-be9f1b95878d\",\"type\":\"Button\",\"properties\":{\"text\":\"Save Entry\",\"height\":50,\"backgroundColor\":\"#1E3A8A\",\"onPressed\":\"674ee288-384e-47d6-970e-071de4797338\",\"foregroundColor\":\"#FFFFF0\"},\"children\":[]}]}]}]}}],\"activeScreenId\":\"b82f3c64-eb88-41f2-ae2c-3427acb378cd\",\"theme\":{\"primaryColor\":\"#6200EE\",\"accentColor\":\"#03DAC6\",\"brightness\":\"dark\",\"fontFamily\":\"Roboto\"},\"previewDevice\":\"ios-phone-portrait\",\"stateVariables\":[],\"dataModels\":[{\"id\":\"3cd3f9f6-81ca-489c-a46c-8de65091e731\",\"name\":\"JournalEntry\",\"featureName\":null,\"fields\":[{\"id\":\"e8d6470d-ac63-4fb8-8e1c-10f9f13ffc53\",\"name\":\"description\",\"type\":\"String\"},{\"id\":\"be2de698-02da-402b-9955-f57643ebb803\",\"name\":\"amount\",\"type\":\"double\"},{\"id\":\"9a63d2d5-f5c1-4c3d-9723-fd645af34b79\",\"name\":\"type\",\"type\":\"String\"},{\"id\":\"3170d33b-5663-49f2-be04-2f963ed1b219\",\"name\":\"date\",\"type\":\"String\"}]}],\"assets\":[],\"customComponents\":[],\"apiConnectors\":[],\"firebaseConnectors\":[],\"supabaseConnectors\":[{\"name\":\"HyverStudio\",\"url\":\"https://ognrfduwupjnzsucthyv.supabase.co\",\"anonKey\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9nbnJmZHV3dXBqbnpzdWN0aHl2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgyOTA5MjYsImV4cCI6MjA3Mzg2NjkyNn0.H-DLcX0wNPDLMZrrlRb9_YwZC0vsuoFj9U0vRJqM_ug\",\"id\":\"ebb6f180-5308-4a81-9457-18394051f7ca\"}],\"github\":null,\"savePath\":\"/home/hyvercode/Documents/Projects/HyverStudioProjects/my_journal\",\"flutterVersion\":\"3.7.12\",\"aiModel\":\"gemini-2.5-flash\"}"
+  },
   "savePath": "/home/hyvercode/Documents/Projects/HyverStudioProjects/my_journal",
   "flutterVersion": "3.7.12",
   "aiModel": "gemini-2.5-flash"
