@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'screens/my_journal_lite_journal_splash_screen.dart';
-import 'screens/my_journal_lite_journal_login_screen.dart';
-import 'screens/my_journal_lite_journal_home_screen.dart';
-import 'screens/my_journal_lite_journal_add_entry_screen.dart';
+import 'screens/journal_splash_screen.dart';
+import 'screens/journal_login_screen.dart';
+import 'screens/journal_home_screen.dart';
+import 'screens/journal_add_entry_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Roboto',
         useMaterial3: true,
       ),
-      home: const MyJournalLiteJournalSplashScreen(),
+      home: const JournalSplashScreen(),
     );
   }
 }

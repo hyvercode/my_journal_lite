@@ -1,6 +1,6 @@
 {
-    "name": "untitled_project",
-    "short_name": "untitled_project",
+    "name": "my_journal_lite",
+    "short_name": "my_journal_lite",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
