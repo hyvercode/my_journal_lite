@@ -5,7 +5,8 @@ import 'package:my_journal_lite/viewmodels/auth_viewmodel.dart';
 import 'package:my_journal_lite/viewmodels/journal_viewmodel.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:provider/provider.dart';
-void main() async {
+
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await dotenv.load(fileName: ".env");
   await Supabase.initialize(

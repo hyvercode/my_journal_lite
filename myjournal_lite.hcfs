@@ -828,7 +828,7 @@
       }
     }
   ],
-  "activeScreenId": "17dcfd51-3f24-47c5-a825-469cae496a8a",
+  "activeScreenId": "b82f3c64-eb88-41f2-ae2c-3427acb378cd",
   "theme": {
     "primaryColor": "#6200EE",
     "accentColor": "#03DAC6",
@@ -861,6 +861,21 @@
         {
           "id": "3170d33b-5663-49f2-be04-2f963ed1b219",
           "name": "date",
+          "type": "String"
+        },
+        {
+          "id": "207679f9-bbd5-4b6f-88e5-3266ba256571",
+          "name": "user_id",
+          "type": "String"
+        },
+        {
+          "id": "ea245cdf-2f82-438c-b5e8-8ca6ba8ed412",
+          "name": "created_by",
+          "type": "String"
+        },
+        {
+          "id": "e8d5c15b-468b-4a4f-abfd-760fb23b2402",
+          "name": "created_at",
           "type": "String"
         }
       ]
