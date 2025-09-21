@@ -94,7 +94,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 50,
                 child:
                     authVM.isLoading
-                        ? const CircularProgressIndicator()
+                        ? const CircularProgressIndicator.adaptive()
                         : ElevatedButton(
                           onPressed: () async {
                             bool success;
