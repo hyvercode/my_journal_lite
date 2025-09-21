@@ -265,7 +265,7 @@
                             "type": "Text",
                             "properties": {
                               "data": "Sign Up",
-                              "fontSize": 16,
+                              "fontSize": 17,
                               "color": "#1E3A8A",
                               "fontWeight": "bold",
                               "onTap": "a898fed4-024d-4598-b3b4-800cbab6f435"
