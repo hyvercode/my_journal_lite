@@ -82,7 +82,7 @@
                     "id": "ae57fd44-30be-4813-ab9a-8ab1d0fc2a68",
                     "type": "Text",
                     "properties": {
-                      "data": "Powered By HyverStudio",
+                      "data": "Powered by HyverStudio",
                       "fontSize": 12,
                       "color": "#FFFFFF",
                       "textAlign": "center",
@@ -180,7 +180,8 @@
                           "borderColor": "#000000",
                           "focusedBorderColor": "#000000"
                         },
-                        "children": []
+                        "children": [],
+                        "name": "emailController"
                       },
                       {
                         "id": "e1dd53fd-73e1-4243-bc7b-facf15e20e57",
@@ -202,13 +203,14 @@
                           "borderColor": "#000000",
                           "focusedBorderColor": "#"
                         },
-                        "children": []
+                        "children": [],
+                        "name": "passwordControlelr"
                       },
                       {
-                        "id": "03a182ab-deb0-4fbf-b244-df2d2c35ce7d",
+                        "id": "00d8de30-be50-4ed5-a298-9c35907c3904",
                         "type": "SizedBox",
                         "properties": {
-                          "height": 24
+                          "height": 16
                         },
                         "children": []
                       },
@@ -220,9 +222,57 @@
                           "height": 50,
                           "backgroundColor": "#1E3A8A",
                           "onPressed": "674ee288-384e-47d6-970e-071de4797338",
-                          "foregroundColor": "#FFFFF0"
+                          "foregroundColor": "#FFFFF0",
+                          "width": 325
                         },
                         "children": []
+                      },
+                      {
+                        "id": "03a182ab-deb0-4fbf-b244-df2d2c35ce7d",
+                        "type": "SizedBox",
+                        "properties": {
+                          "height": 50
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "33479be3-56c1-483d-a83d-5f80b76b4216",
+                        "type": "Center",
+                        "properties": {},
+                        "children": [
+                          {
+                            "id": "bac40779-2daf-4268-8818-63253ed61be2",
+                            "type": "Text",
+                            "properties": {
+                              "data": "Don't you have account ?  ",
+                              "fontSize": 16,
+                              "color": "#000000",
+                              "fontStyle": "italic"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "6969088d-a98c-4b31-ac7c-e7057bf04cd9",
+                            "type": "SizedBox",
+                            "properties": {
+                              "width": 5,
+                              "height": 20
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "a8177481-9a13-4a60-9c96-c5d14a7f4313",
+                            "type": "Text",
+                            "properties": {
+                              "data": "Sign Up",
+                              "fontSize": 16,
+                              "color": "#1E3A8A",
+                              "fontWeight": "bold",
+                              "onTap": "a898fed4-024d-4598-b3b4-800cbab6f435"
+                            },
+                            "children": []
+                          }
+                        ]
                       }
                     ]
                   }
@@ -558,9 +608,176 @@
           }
         ]
       }
+    },
+    {
+      "id": "a898fed4-024d-4598-b3b4-800cbab6f435",
+      "name": "Journal Register",
+      "path": "/journal-login",
+      "widgetTree": {
+        "id": "b3bebf4a-05d2-4b07-8791-917451786682",
+        "type": "Scaffold",
+        "properties": {
+          "backgroundColor": "#FFFFFF"
+        },
+        "children": [
+          {
+            "id": "daa74329-5689-408d-b1e4-b98da0b9f0db",
+            "type": "Padding",
+            "properties": {
+              "padding": 24
+            },
+            "children": [
+              {
+                "id": "9f44e7b3-adb4-400c-a0d8-978283146b2c",
+                "type": "Center",
+                "properties": {},
+                "children": [
+                  {
+                    "id": "ec658720-970e-496f-aaa6-cd6ecc049175",
+                    "type": "Column",
+                    "properties": {
+                      "mainAxisAlignment": "center",
+                      "crossAxisAlignment": "start"
+                    },
+                    "children": [
+                      {
+                        "id": "67dbe610-082d-42f2-aaf4-83c35da5e5dc",
+                        "type": "SizedBox",
+                        "properties": {
+                          "height": 10
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "3ce22118-f183-40ad-b6a8-3aa1757db8fd",
+                        "type": "Text",
+                        "properties": {
+                          "data": "Register",
+                          "fontSize": 28,
+                          "fontWeight": "bold",
+                          "color": "#1E3A8A"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "116d3d65-0567-4554-b965-518ea7f3ef33",
+                        "type": "SizedBox",
+                        "properties": {
+                          "height": 24
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "edc86807-1805-4e5b-a72f-570551057ce3",
+                        "type": "TextField",
+                        "properties": {
+                          "label": "Email",
+                          "textColor": "#000000",
+                          "fillColor": "#000000",
+                          "filled": false,
+                          "borderColor": "#000000",
+                          "focusedBorderColor": "#000000"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "a48d8b10-83e2-4896-a2cf-0992927cd4b4",
+                        "type": "SizedBox",
+                        "properties": {
+                          "height": 16
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "9999cd9d-cb30-4cea-a636-fe996367110a",
+                        "type": "TextField",
+                        "properties": {
+                          "label": "Password",
+                          "obscureText": true,
+                          "hintText": "*******",
+                          "textColor": "#000000",
+                          "fillColor": "#000000",
+                          "borderColor": "#000000",
+                          "focusedBorderColor": "#"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "11c6d2a3-0faf-43ad-bd37-fbda208b338c",
+                        "type": "SizedBox",
+                        "properties": {
+                          "height": 16
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "f705b331-a690-4c84-801a-5171a7c494c8",
+                        "type": "TextField",
+                        "properties": {
+                          "label": "Fullname",
+                          "obscureText": true,
+                          "hintText": "",
+                          "textColor": "#000000",
+                          "fillColor": "#000000",
+                          "borderColor": "#000000",
+                          "focusedBorderColor": "#"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "04c53dab-4743-4e97-876b-da60dcc59d32",
+                        "type": "SizedBox",
+                        "properties": {
+                          "height": 16
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "c47b5f06-f8ef-4d89-a580-7befe0266b15",
+                        "type": "TextField",
+                        "properties": {
+                          "label": "Phone Number",
+                          "obscureText": true,
+                          "hintText": "",
+                          "textColor": "#000000",
+                          "fillColor": "#000000",
+                          "borderColor": "#000000",
+                          "focusedBorderColor": "#"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "99195600-1764-44ce-925b-0d11824aa2d8",
+                        "type": "SizedBox",
+                        "properties": {
+                          "height": 24
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "f0246c94-fedb-4195-acc9-1beb47aeda85",
+                        "type": "Button",
+                        "properties": {
+                          "text": "Submit",
+                          "height": 50,
+                          "backgroundColor": "#1E3A8A",
+                          "onPressed": "674ee288-384e-47d6-970e-071de4797338",
+                          "foregroundColor": "#FFFFF0",
+                          "width": 325
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   ],
-  "activeScreenId": "b82f3c64-eb88-41f2-ae2c-3427acb378cd",
+  "activeScreenId": "dc5d7e3a-e0f5-40e2-b676-40e5bfa28012",
   "theme": {
     "primaryColor": "#6200EE",
     "accentColor": "#03DAC6",
@@ -596,6 +813,50 @@
           "type": "String"
         }
       ]
+    },
+    {
+      "name": "Login",
+      "featureName": "Journal",
+      "fields": [
+        {
+          "id": "4ff18e56-d465-41d3-9143-b08c99ed75be",
+          "name": "email",
+          "type": "String"
+        },
+        {
+          "id": "0b8c517c-a82f-4de3-b280-ff7d3ff22ba8",
+          "name": "password",
+          "type": "String"
+        }
+      ],
+      "id": "8ec1d81f-e5c9-4b2e-adc5-e5a00f23a2f2"
+    },
+    {
+      "name": "Register",
+      "featureName": "Journal",
+      "fields": [
+        {
+          "id": "6774cf75-c9b2-4f84-a8c0-411b4732e874",
+          "name": "email",
+          "type": "String"
+        },
+        {
+          "id": "42069456-bc20-4d3c-9f2e-88e957492033",
+          "name": "password",
+          "type": "String"
+        },
+        {
+          "id": "2b0cce7d-e01f-4a55-8b11-000812780841",
+          "name": "phoneNumber",
+          "type": "String"
+        },
+        {
+          "id": "4c4f6a6e-2bb2-4ed6-9085-c83b68ba009f",
+          "name": "fullName",
+          "type": "String"
+        }
+      ],
+      "id": "4d5f2885-cc2d-4141-bf09-21ac027799ad"
     }
   ],
   "assets": [],

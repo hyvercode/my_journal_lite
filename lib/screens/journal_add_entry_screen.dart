@@ -1,9 +1,12 @@
 
 import 'package:flutter/material.dart';
 import '../models/journal_entry.dart';
+import '../models/login.dart';
+import '../models/register.dart';
 import './journal_splash_screen.dart';
 import './journal_login_screen.dart';
 import './journal_home_screen.dart';
+import './journal_register_screen.dart';
 
 class JournalAddEntryScreen extends StatefulWidget {
   const JournalAddEntryScreen({super.key});
