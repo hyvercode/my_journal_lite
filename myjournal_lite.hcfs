@@ -509,7 +509,12 @@
                     "id": "2fc7260d-3f55-4efa-b31c-999ea41c2316",
                     "type": "TextField",
                     "properties": {
-                      "label": "Description"
+                      "label": "Description",
+                      "textColor": "#000000",
+                      "borderRadius": 0,
+                      "borderColor": "#000000",
+                      "borderWidth": 1,
+                      "fillColor": "#000000"
                     },
                     "children": []
                   },
@@ -525,7 +530,11 @@
                     "id": "ab0dc6e8-8c15-4b1e-85cb-09a3d2335a66",
                     "type": "TextField",
                     "properties": {
-                      "label": "Amount"
+                      "label": "Amount",
+                      "textColor": "#000000",
+                      "borderWidth": 1,
+                      "borderColor": "#000000",
+                      "fillColor": "#000000"
                     },
                     "children": []
                   },
@@ -533,16 +542,7 @@
                     "id": "e4b827f6-77bc-4b96-a6c7-a44ec66bf160",
                     "type": "SizedBox",
                     "properties": {
-                      "height": 24
-                    },
-                    "children": []
-                  },
-                  {
-                    "id": "b0b36db3-68ba-4166-93a2-3dd2012d369d",
-                    "type": "Text",
-                    "properties": {
-                      "data": "Type",
-                      "color": "#1E3A8A"
+                      "height": 30
                     },
                     "children": []
                   },
@@ -552,38 +552,66 @@
                     "properties": {},
                     "children": [
                       {
-                        "id": "f7b9aeba-3c5e-408d-916a-be53b2897e8b",
+                        "id": "b0b36db3-68ba-4166-93a2-3dd2012d369d",
+                        "type": "Text",
+                        "properties": {
+                          "data": "Type",
+                          "color": "#1E3A8A",
+                          "fontWeight": "bold",
+                          "letterSpacing": 0
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "46aa8477-5d38-4105-ab81-e7bd8c50f712",
+                    "type": "SizedBox",
+                    "properties": {
+                      "height": 10
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "bc7b61d6-e1b7-4e07-b4a2-94b64ce4d379",
+                    "type": "Row",
+                    "properties": {},
+                    "children": [
+                      {
+                        "id": "315f36b9-0eac-4c56-a9de-5a081890a29f",
                         "type": "Radio",
                         "properties": {
                           "value": "Income",
-                          "groupValue": "Income"
+                          "groupValue": "Income",
+                          "activeColor": "#1E3A8A"
                         },
                         "children": []
                       },
                       {
-                        "id": "52b00a76-54c7-4b01-b16d-bbed789b643c",
+                        "id": "de6a5b68-347a-4935-8088-f4755d1e4dce",
                         "type": "Text",
                         "properties": {
                           "data": "Income",
-                          "color": "#1E3A8A"
+                          "color": "#000000"
                         },
                         "children": []
                       },
                       {
-                        "id": "4a66e68e-2600-4bcf-9aac-29ae1bfeb667",
+                        "id": "05bbbe78-47cf-4838-89c6-981c9abf3f11",
                         "type": "Radio",
                         "properties": {
                           "value": "Expense",
-                          "groupValue": "Income"
+                          "groupValue": "Income",
+                          "activeColor": "#1E3A8A"
                         },
                         "children": []
                       },
                       {
-                        "id": "ca01491f-2a2d-4422-9b2b-5fca6c6bc23d",
+                        "id": "5b15f19f-3762-4018-8f40-53b0aa072ad0",
                         "type": "Text",
                         "properties": {
                           "data": "Expense",
-                          "color": "#1E3A8A"
+                          "color": "#000000"
                         },
                         "children": []
                       }
@@ -605,7 +633,8 @@
                       "height": 50,
                       "backgroundColor": "#1E3A8A",
                       "onPressed": "674ee288-384e-47d6-970e-071de4797338",
-                      "foregroundColor": "#FFFFF0"
+                      "foregroundColor": "#FFFFF0",
+                      "width": 340
                     },
                     "children": []
                   }
@@ -799,7 +828,7 @@
       }
     }
   ],
-  "activeScreenId": "b82f3c64-eb88-41f2-ae2c-3427acb378cd",
+  "activeScreenId": "17dcfd51-3f24-47c5-a825-469cae496a8a",
   "theme": {
     "primaryColor": "#6200EE",
     "accentColor": "#03DAC6",
