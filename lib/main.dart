@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Roboto',
         useMaterial3: true,
       ),
-      home: const JournalSplashScreen(),
+      home: const JournalAddEntryScreen(),
     );
   }
 }
