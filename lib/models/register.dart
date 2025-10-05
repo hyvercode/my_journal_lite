@@ -1,17 +1,23 @@
-class Register {
-  final String? email;
-  final String? password;
-  final String? phoneNumber;
-  final String? fullName;
 
-  Register({this.email, this.password, this.phoneNumber, this.fullName});
+class Register {
+  final String email;
+  final String password;
+  final String name;
+  final String phoneNumber;
+
+  Register({
+    required this.email,
+    required this.password,
+    required this.name,
+    required this.phoneNumber,
+  });
 
   factory Register.fromJson(Map<String, dynamic> json) {
     return Register(
-      email: json['email'],
-      password: json['password'],
-      phoneNumber: json['phoneNumber'],
-      fullName: json['fullName']
+      email: json['email'] as String? ?? '',
+      password: json['password'] as String? ?? '',
+      name: json['name'] as String? ?? '',
+      phoneNumber: json['phone_number'] as String? ?? '',
     );
   }
 }

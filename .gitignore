@@ -1,20 +1,38 @@
-.DS_Store
-.dart_tool/
-.idea/
-.packages
-.pub/
-.vscode/
-build/
-*.iml
-*.lock
+# Miscellaneous
+*.class
 *.log
-.env
-android/
-ios/
-linux/
-macos/
-windows/
-web/
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Visual Studio Code
+.vscode/
+
+# Flutter
 .flutter-plugins
 .flutter-plugins-dependencies
-.metadata
+.packages
+.pub-cache/
+.pub/
+build/
+ios/Pods/
+ios/Flutter/App.framework
+android/.gradle/
+android/app/build/
+
+# Generated files
+lib/generated_plugin_registrant.dart
+
+# Sensitive files
+.env
